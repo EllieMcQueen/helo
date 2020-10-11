@@ -6,15 +6,15 @@ import './nav.css';
 
 class Nav extends Component {
 
-    render(){
+    render(props){
         return(
             <div className='nav-bar'>
-                <div>{this.props.user.username}</div>
+                {/* <p>{props.username}</p>
                 <img 
                     className='profile-picture'
-                    src={this.props.user.profile_picture}
-                    alt={this.props.user.username}/>
-                {/* <div>{this.props.user.profile_picture}</div> */}
+                    // src={this.props.user.profile_picture}
+                    alt='profile pic'/>
+                <div>{this.props.user.profile_picture}</div> */}
                 <Link to='/dashboard'>Home</Link>
                 <Link to='/new'>New Post</Link>
                 <Link to='/'>Logout</Link>

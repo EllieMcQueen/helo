@@ -1,5 +1,5 @@
 .nav-bar{
-    background: pink;
+    background: linear-gradient( #ff9770,#ff70a6);
     width: 100px;
     height: 100vh;
     display:flex;

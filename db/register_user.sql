@@ -1,12 +1,4 @@
-INSERT INTO helo_user(
-    username,
-    password,
-    profile_picture
-)
-VALUES(
-    ${username},
-    ${hash},
-    ${profilePicture}
-)
+INSERT INTO users(username, password, profile_picture)
+VALUES($1, $2, $3)
 
-returning user_id, username,  profile_picture;
+returning id, username, profile_picture;

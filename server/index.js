@@ -18,16 +18,10 @@ app.use(
   })
 );
 
-massive({
-  connectionString: CONNECTION_STRING,
-  ssl: { rejectUnauthorized: false },
-}).then((db) => {
-  app.set("db", db);
-  console.log("db connected");
-});
 
-app.post("/api/register", controller.register);
-app.post("/api/login", controller.login);
+
+app.post("/api/register", ctrl.register);
+app.post("/api/login", ctrl.login);
 // app.get("/api/logout", controller.logout);
 
 // //post endpoints
@@ -39,3 +33,10 @@ app.post("/api/login", controller.login);
 // app.put("/api/user/:id", controller.updateUsername);
 
 app.listen(port, () => console.log(` on port ${port}`));
+massive({
+    connectionString: CONNECTION_STRING,
+    ssl: { rejectUnauthorized: false },
+  }).then((db) => {
+    app.set("db", db);
+    console.log("db connected");
+  });
