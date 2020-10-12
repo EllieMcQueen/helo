@@ -1,4 +1,6 @@
-.App {
+App {
+  padding: 20px 20px 20px 100px;
+
   text-align: center;
 }
 
@@ -9,41 +11,82 @@
   position: absolute;
   top: 0;
   left: 0;
-  /* display:flex;
-  text-align: center; */
+  /* display:flex; */
+  /* text-align: center;  */
   justify-content: center;
   color: white;
-   
+  /* flex-direction: row; */
 }
 
 .auth_container {
-  border-radius: 2%;
-  box-shadow: 10px 10px 30px dimgray;
+  border-radius: 8px;
+  box-shadow: 0 14px 28px 0 rgba(0,0,0,.25),
+              0 10px 10px 0 rgba(0,0,0,.26);
   background-image: linear-gradient(97deg,#ff7a6e,#ffd670);
-  height: 400px;
-  width: 350px;
+  height: 55vh;
+  width: 35vw;
   margin: 200px auto;
   display:flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20px;
-  /* //border-color: 10px dimgray; */
-  }
+  padding: 20px; 
+  border-color: 10px dimgray; 
+}
 
 .auth_title{
-  font-size: 75px;
+  height: 15vh;
+  width: 25vh;
+  font-size: 90px;
   font-weight: 700;
-  margin: 5px
+  font-style: initial;
+  vertical-align: baseline;
+  box-sizing: initial;
+  padding-bottom: 30px;
+  border-bottom: 30px;
+  padding-top: 20px;
+  margin: 0px;
+  
 }
 
-  
 .auth_input_box{
-margin: -5px;
-flex-direction: row;
-width: 200px;
+  display: flex;
+  justify-content: space-around;
+  width: 65%;
+  height: 6%;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: inherit;
+  padding-bottom: 10px;
+  margin-bottom:  20px;
 }
+
+p{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  scroll-margin-inline-end: 0px;
+}
+
 .auth_button_container{
-background-color: black;
-color: white;
-display: inline-block;
+  display: flex;
+  justify-content: space-around;
+  width: 55%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+
+  
 }
+.black_button{
+border-radius: 1px;
+background-image: radial-gradient(circle at 50% -46%, #737373, #403d39);
+padding: 10px 20px;
+color: #fff;
+border: none;
+box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.2);
+} 
