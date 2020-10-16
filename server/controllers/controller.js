@@ -1,11 +1,11 @@
+const bcrypt = require("bcryptjs");
+
 module.exports = {   
 
   createPost: (req, res) => {
       const { title, img, content } = req.body;
       const { id } = req.session.user; 
       const db = req.app.get('db');
-
-
       db.create_post(title, img, content, id).then( () => res.sendStatus(200));
   },
   getPosts: async (req, res) => {
