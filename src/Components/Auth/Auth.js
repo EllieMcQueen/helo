@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { connect } from 'react-redux'
-import { loginUser } from '../../ducks/reducer'
+import { connect } from 'react-redux';
+import { loginUser } from '../../ducks/reducer';
 
 
 //METHODS

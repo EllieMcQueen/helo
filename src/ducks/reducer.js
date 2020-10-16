@@ -12,12 +12,11 @@ const initialState = {
 
 export function loginUser(username, id){
     return {
-        type: loginUser,
+        type: LOGIN_USER,
         payload: {
             username: username, 
-            id: id
+            id: id,
         }
-
     }
 }
 
@@ -44,9 +43,9 @@ export default function(state = initialState, action){
         case LOGOUT_USER:
             return initialState;
         case GET_USER + '_PENDING':
-            return{...state}
+            return{ ...state }
         case GET_USER + '_FULFILLED':
-            return{username, id, profile_picture}
+            return{ username, id, profile_picture }
         case GET_USER + '_REJECTED':
             return initialState;
         default:

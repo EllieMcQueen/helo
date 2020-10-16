@@ -1,7 +1,16 @@
-App {
+.App {
   padding: 20px 20px 20px 100px;
-
+  background-color:  #f2f2f2;
   text-align: center;
+  min-width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: inherit;
 }
 
 .Auth {
@@ -90,3 +99,168 @@ color: #fff;
 border: none;
 box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.2);
 } 
+.Dash{
+  width: 70%;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  align-items: center;
+  box-sizing: inherit;
+  display: block;
+  
+}
+.dash_filter{
+  display: flex;
+  border-radius: 2px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.1),
+  0 1px 2px 0 rgba(0,0,0,.2);
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.dash_search_box {
+  width: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: inherit;
+
+}
+.dash_search_bar {
+height: 25px;
+width: 45%;
+box-sizing: inherit;
+}
+
+.dash_search_button{
+  
+  height: 30px;
+  width: 50px;
+  background-color: #ff9770;
+  border-radius: 2px;
+  padding: 2px;
+}
+#dash_reset{
+  height: 30px;
+  padding: 5px 10px;
+}
+.dark_button{
+  border-radius: 1px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.1),
+  0 1px 2px 0 rgba(0,0,0,.2);
+  background-image: radial-gradient(circle at 50% -46%, #737373, #403d39);
+  color: #fff;
+  border: none;
+}
+.my_post{
+  box-sizing: inherit;
+  display: flex;
+  width: 70px;
+  height: 30px;
+  text: center;
+}
+.dash_checkbox{
+  display: flex;
+  justify-content: right;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: inherit;
+}
+.dash_post_box{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.2);
+  width: 70%;
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+.form_content_box{
+  border-radius: 2px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.2);
+  width: calc(100% - 100px);
+  height: 700px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 700;
+}
+.form_input_box{
+  width: 90%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+  box-sizing: inherit;
+}
+
+.form_img_prev {
+  width: 50%;
+  height: 400px;
+  
+  margin: 10px auto 5px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  
+}
+.form_text_box{
+  width: 90%;
+  margin: 3px auto 10px;
+}
+
+.form_input_box{
+  width: 90%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+  box-sizing: inherit;
+}
+
+
+
+
+.form_text_box {
+  resize: none;
+  width:80%;
+  margin:10px;
+  
+}
+.form_button {
+  position: relative;
+  left: 90%;
+}
+.post_content_box{
+  border-radius: 2px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.2);
+  width: calc(100% - 100px);
+  height: 700px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 700;
+}
+

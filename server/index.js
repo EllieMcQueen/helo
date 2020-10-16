@@ -2,7 +2,8 @@ require("dotenv").config();
 const express = require("express"),
       massive = require("massive"),
       session = require("express-session"),
-      ctrl = require("./controller"),
+      ctrl = require("./controllers/controller"),
+      auth = require("./controllers/authController"),
     { SERVER_PORT, CONNECTION_STRING, SESSION_SECRET } = process.env,
       port = SERVER_PORT,
       app = express();
@@ -20,14 +21,14 @@ app.use(
 
 
 
-app.post("/api/register", ctrl.register);
-app.post("/api/login", ctrl.login);
-// app.get("/api/logout", controller.logout);
+app.post("/api/register", auth.register);
+app.post("/api/login", auth.login);
+app.get("/api/logout", auth.logout);
 
 // //post endpoints
-// app.post("/api/post", controller.createPost);
-// app.get("/api/posts/:id", controller.getUserPosts);
-// app.delete("/api/post/:id", controller.deletePost);
+app.post("/api/post", ctrl.createPost);
+app.get("/api/posts", auth.getUserPost);
+app.delete("/api/post", ctrl.deletePost);
 
 //user endpoints
 // app.put("/api/user/:id", controller.updateUsername);
